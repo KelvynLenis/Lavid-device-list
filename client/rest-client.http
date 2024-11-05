@@ -1,0 +1,51 @@
+
+POST https://apiphonestream-production.up.railway.app/user
+Content-Type: application/json
+
+{
+  "email": "kelvyn@lavid.ufpb.br",
+  "password": "123456"
+}
+
+###
+
+POST https://apiphonestream-production.up.railway.app/auth
+Content-Type: application/json
+
+{
+  "username": "kelvyn@lavid.ufpb.br",
+	"password": "password"
+}
+
+###
+
+GET https://apiphonestream-production.up.railway.app/user
+
+###
+
+GET https://apiphonestream-production.up.railway.app/phone
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzI4YWI3ZDExMzRjMGM1NGEwYjFjNmMiLCJpYXQiOjE3MzA3MjEwMjYsImV4cCI6MTczMTA4MTAyNn0.Ds2IGYQf-r6YHl4u89fHDsfDHO0CciJ6iF510TLwCYs
+
+###
+
+POST https://apiphonestream-production.up.railway.app/phone
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzI4YWNjMTExMzRjMGM1NGEwYjFjNzYiLCJ1c2VybmFtZSI6ImtlbHZ5bkBsYXZpZC51ZnBiLmJyIiwiaWF0IjoxNzMwNzM5ODAwLCJleHAiOjE3MzEwOTk4MDB9.d55XgrexGmiQiLBzVkiSb-z0K2oV0Ykn_7fMm_q85aE
+Content-Type: application/json
+
+{
+  "phone_model": "iPhone 12",
+  "phone_number": "iPhone 12",
+  "point": {
+    "type": "Point",
+    "coordinates": [
+      0,
+      0
+    ]
+  },
+  "brand": "Apple",
+  "imei": "22222",
+  "status": "active",
+  "isStolen": false,
+  "createdAt": "01/01/2021",
+  "updatedAt": "01/01/2021"
+}
